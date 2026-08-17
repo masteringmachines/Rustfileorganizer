@@ -1,0 +1,8 @@
+# Example custom rules. Pass with --config rules.example.toml
+# Each key is a category (folder name), each value is a list of extensions
+# (no dots, case-insensitive). Any extension not listed lands in "Other".
+
+Images = ["jpg", "jpeg", "png", "gif", "webp"]
+Documents = ["pdf", "docx", "txt", "md"]
+Code = ["rs", "py", "js", "ts"]
+Screenshots = ["png"]  # note: later entries win if an extension repeats
